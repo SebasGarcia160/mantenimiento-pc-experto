@@ -1,0 +1,64 @@
+{
+  "descripciones_categorias": {
+    "Hardware - Componentes Críticos": "Análisis de Placa Base, Procesador y RAM. Se enfoca en la estabilidad del sistema, procesamiento de datos y fallos de encendido por hardware interno.",
+    "Hardware - Periféricos y Energía": "Diagnóstico de Fuente de Poder, monitores y puertos. Vital para prevenir cortos eléctricos y asegurar la correcta interacción con el usuario.",
+    "Software - Optimización y Sistema": "Evaluación del SO y seguridad. Detecta desde virus hasta conflictos de controladores que afectan el rendimiento y la integridad de la información.",
+    "Almacenamiento y Datos": "Revisión de salud de unidades HDD y SSD. Prevención crítica contra la pérdida de archivos y degradación mecánica de los platos del disco."
+  },
+  "diccionario_sintomas": {
+    "pitidos_bios": "¿Suena un pitido al encender la PC?",
+    "pantalla_azul": "¿Le ha salido la 'Pantalla Azul de la Muerte'?",
+    "calor_excesivo": "¿Siente calor extremo saliendo de los ventiladores?",
+    "reinicio_aleatorio": "¿La PC se apaga o reinicia sola de repente?",
+    "congelamiento_total": "¿La imagen se queda 'congelada' sin poder mover el mouse?",
+    "lentitud_aplicaciones": "¿Los programas se demoran siglos en abrir o se cierran?",
+    "no_enciende": "¿Presiona el botón y no prende ninguna luz?",
+    "teclado_bloqueado": "¿El teclado o mouse fallan por momentos?",
+    "parpadeo_monitor": "¿La pantalla parpadea o tiene colores raros?",
+    "olor_quemado": "¿Siente un leve olor a plástico caliente?",
+    "puertos_falla": "¿Los puertos USB a veces no detectan nada?",
+    "ruido_ventilador": "¿El ventilador suena como una turbina o hace ruidos secos?",
+    "lentitud_inicio": "¿Se demora mucho en llegar a la pantalla de Windows?",
+    "publicidad_rara": "¿Le salen anuncios en el escritorio sin abrir el navegador?",
+    "error_actualizacion": "¿Windows Update siempre marca error al actualizar?",
+    "uso_cpu_100": "¿El ventilador no para y el sistema está muy lento?",
+    "iconos_desaparecen": "¿Faltan iconos o la barra de tareas no responde?",
+    "wifi_desconecta": "¿El internet se va y vuelve sin tocar nada?",
+    "ruido_clic_disco": "¿Escucha un 'clic-clic' metálico dentro de la PC?",
+    "error_lectura": "¿Al abrir un archivo dice 'No se puede leer'?",
+    "espacio_insuficiente": "¿Windows le avisa que el disco está casi lleno?",
+    "desaparicion_particion": "¿Ya no le aparece el Disco Local D: o E:?",
+    "guardado_lento": "¿Copiar una foto al disco tarda demasiado?",
+    "corrupcion_datos": "¿Sus fotos o documentos aparecen con rayas o dañados?"
+  },
+  "reglas": [
+    {
+      "id": 1,
+      "categoria": "Hardware - Componentes Críticos",
+      "falla": "Falla Crítica de Procesamiento o Memoria",
+      "sintomas": ["pitidos_bios", "pantalla_azul", "calor_excesivo", "reinicio_aleatorio", "congelamiento_total", "lentitud_aplicaciones"],
+      "accion": "RECOMENDACIÓN: Realice limpieza física profunda, aplique pasta térmica de alta calidad y verifique los voltajes en la BIOS."
+    },
+    {
+      "id": 2,
+      "categoria": "Hardware - Periféricos y Energía",
+      "falla": "Inestabilidad Eléctrica o de Salida de Video",
+      "sintomas": ["no_enciende", "teclado_bloqueado", "parpadeo_monitor", "olor_quemado", "puertos_falla", "ruido_ventilador"],
+      "accion": "RECOMENDACIÓN: Pruebe con una fuente de poder certificada y verifique que no haya capacitores inflados en la placa."
+    },
+    {
+      "id": 3,
+      "categoria": "Software - Optimización y Sistema",
+      "falla": "Degradación Lógica y Riesgo de Malware",
+      "sintomas": ["lentitud_inicio", "publicidad_rara", "error_actualizacion", "uso_cpu_100", "iconos_desaparecen", "wifi_desconecta"],
+      "accion": "RECOMENDACIÓN: Ejecute limpieza de archivos temporales, escanee con un antivirus offline y repare el registro del sistema."
+    },
+    {
+      "id": 4,
+      "categoria": "Almacenamiento y Datos",
+      "falla": "Desgaste Mecánico o Corrupción de Disco",
+      "sintomas": ["ruido_clic_disco", "error_lectura", "espacio_insuficiente", "desaparicion_particion", "guardado_lento", "corrupcion_datos"],
+      "accion": "URGENTE: ¡Riesgo de pérdida de datos! Haga backup en la nube y reemplace el disco duro por un SSD de inmediato."
+    }
+  ]
+}
