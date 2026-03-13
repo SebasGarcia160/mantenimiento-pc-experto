@@ -1,0 +1,72 @@
+{
+  "descripciones_categorias": {
+    "Hardware - Componentes Críticos": "Análisis de Placa Base, CPU y RAM. Evalúa la estabilidad del procesamiento, integridad de memoria y salud de la batería CMOS.",
+    "Hardware - Periféricos y Energía": "Diagnóstico de Fuente de Poder, monitores y conectividad física. Previene cortos eléctricos y asegura el suministro estable de energía.",
+    "Software - Optimización y Sistema": "Evaluación del SO, seguridad y controladores. Detecta malware, fugas de memoria y conflictos lógicos que ralentizan el equipo.",
+    "Almacenamiento y Datos": "Revisión de salud de unidades HDD/SSD. Enfocado en la integridad de la tabla de archivos, velocidad de lectura y prevención de pérdida de datos."
+  },
+  "diccionario_sintomas": {
+    "pitidos_bios": "¿Suena un pitido al encender la PC?",
+    "pantalla_azul": "¿Ha salido la 'Pantalla Azul' de error?",
+    "calor_excesivo": "¿Siente calor extremo en el chasis?",
+    "reinicio_aleatorio": "¿La PC se reinicia sola de repente?",
+    "congelamiento_total": "¿La imagen se queda inmóvil (congelada)?",
+    "reloj_atrasado": "¿La hora de Windows se desconfigura sola?",
+    "falla_estres": "¿Se apaga solo al jugar o abrir algo pesado?",
+    "lentitud_aplicaciones": "¿Los programas tardan mucho en abrir?",
+    "no_enciende": "¿No prende ninguna luz al pulsar el botón?",
+    "teclado_bloqueado": "¿El teclado o mouse fallan por ratos?",
+    "parpadeo_monitor": "¿La pantalla parpadea o tiene rayas?",
+    "olor_quemado": "¿Siente un leve olor a plástico caliente?",
+    "puertos_falla": "¿Los puertos USB no detectan dispositivos?",
+    "ruido_ventilador": "¿El ventilador suena como una turbina?",
+    "zumbido_fuente": "¿Escucha un zumbido eléctrico en la torre?",
+    "bateria_ups": "¿Se apaga al haber un bajón de luz mínimo?",
+    "lentitud_inicio": "¿Demora mucho en cargar Windows al inicio?",
+    "publicidad_rara": "¿Salen anuncios solos en el escritorio?",
+    "error_actualizacion": "¿Windows Update siempre marca error?",
+    "uso_cpu_100": "¿El ventilador no para y el sistema está lento?",
+    "iconos_desaparecen": "¿Faltan iconos o la barra de tareas falla?",
+    "wifi_desconecta": "¿El internet se cae sin motivo aparente?",
+    "mouse_fantasma": "¿El puntero se mueve solo o hace clics?",
+    "memoria_insuficiente": "¿Sale error de 'Memoria Insuficiente'?",
+    "ruido_clic_disco": "¿Escucha un 'clic-clic' dentro de la PC?",
+    "error_lectura": "¿Dice 'No se puede leer el archivo'?",
+    "espacio_insuficiente": "¿El disco está casi lleno constantemente?",
+    "desaparicion_particion": "¿Ya no aparece el Disco Local D: o E:?",
+    "guardado_lento": "¿Copiar archivos tarda demasiado tiempo?",
+    "corrupcion_datos": "¿Sus fotos o documentos se ven dañados?",
+    "nombres_raros": "¿Hay carpetas con nombres de símbolos raros?",
+    "disco_100": "¿El Administrador de tareas marca Disco al 100%?"
+  },
+  "reglas": [
+    {
+      "id": 1,
+      "categoria": "Hardware - Componentes Críticos",
+      "falla": "Inestabilidad de Procesamiento o Agotamiento de CMOS",
+      "sintomas": ["pitidos_bios", "pantalla_azul", "calor_excesivo", "reinicio_aleatorio", "congelamiento_total", "reloj_atrasado", "falla_estres", "lentitud_aplicaciones"],
+      "accion": "MANTENIMIENTO: Reemplace la pasta térmica, limpie contactos de la RAM con goma de borrar y cambie la pila CR2032 de la placa base."
+    },
+    {
+      "id": 2,
+      "categoria": "Hardware - Periféricos y Energía",
+      "falla": "Fallo de Suministro Eléctrico o Desgaste de Periféricos",
+      "sintomas": ["no_enciende", "teclado_bloqueado", "parpadeo_monitor", "olor_quemado", "puertos_falla", "ruido_ventilador", "zumbido_fuente", "bateria_ups"],
+      "accion": "PREVENCIÓN: Realice un test de voltajes a la fuente de poder y limpie los puertos con alcohol isopropílico. Evite conectar el equipo a tomas sin polo a tierra."
+    },
+    {
+      "id": 3,
+      "categoria": "Software - Optimización y Sistema",
+      "falla": "Infección de Sistema o Conflictos de Memoria Virtual",
+      "sintomas": ["lentitud_inicio", "publicidad_rara", "error_actualizacion", "uso_cpu_100", "iconos_desaparecen", "wifi_desconecta", "mouse_fantasma", "memoria_insuficiente"],
+      "accion": "OPTIMIZACIÓN: Ejecute un escaneo con Malwarebytes, repare la imagen de Windows (DISM) y aumente el tamaño del archivo de paginación."
+    },
+    {
+      "id": 4,
+      "categoria": "Almacenamiento y Datos",
+      "falla": "Degradación Mecánica o Corrupción de Sectores",
+      "sintomas": ["ruido_clic_disco", "error_lectura", "espacio_insuficiente", "desaparicion_particion", "guardado_lento", "corrupcion_datos", "nombres_raros", "disco_100"],
+      "accion": "URGENTE: ¡Riesgo inminente de pérdida total! Realice backup inmediato. Si es un HDD, reemplácelo por un SSD para ganar un 500% de velocidad."
+    }
+  ]
+}
